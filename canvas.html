@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/canvas.css">
+  <link rel="stylesheet" href="css/importsBootstrap.css">
+  <title>Stark Team</title>
+</head>
+
+<body class="container-fluid h-100 w-100 m-0 p-0">
+  <!-- Header Inicio-->
+  <header class="row h-10  w-100 m-0 p-0">
+    <!-- Navbar Inicio-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img id="logoNav" src="componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipe.html">Equipe</a>
+            </li>
+            <!-- dropdown menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Artefatos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="canvas.html">Canvas</a></li>
+                <li><a class="dropdown-item" href="documentacao.html">Documentação</a></li>
+                <li><a class="dropdown-item" href="picth.html">Pitch</a></li>
+                <li><a class="dropdown-item" href="prototipo.html">Protótipo</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <!-- Butao do modal download -->
+                  <button type="button" class="dropdown-item btn btn-link text-decoration-none" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Download
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <!-- dropdown menu fim-->
+          </ul>
+          <!-- Navbar fim-->
+          <!-- Barra de pesquisa-->
+
+          <!-- Barra de pesquisa fim-->
+          <!-- butao do tema-->
+          <div class="tema">
+            <label id="theme-toggle-button">
+              <input type="checkbox" id="btnSwitch">
+              <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
+
+
+                  <g filter="url(#container)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+                    <rect fill="#83cbd8" transform="translate(3.5 3.5)" rx="17.5" height="35" width="60.667"
+                      data-name="container" id="container"></rect>
+                  </g>
+
+                  <g transform="translate(2.333 2.333)" id="button">
+
+                    <g data-name="sun" id="sun">
+                      <g filter="url(#sun-outer)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                        <circle fill="#f8e664" transform="translate(5.83 5.83)" r="15.167" cy="15.167" cx="15.167"
+                          data-name="sun-outer" id="sun-outer-2"></circle>
+                      </g>
+                      <g filter="url(#sun)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                        <path fill="rgba(246,254,247,0.29)" transform="translate(9.33 9.33)"
+                          d="M11.667,0A11.667,11.667,0,1,1,0,11.667,11.667,11.667,0,0,1,11.667,0Z" data-name="sun"
+                          id="sun-3"></path>
+                      </g>
+                      <circle fill="#fcf4b9" transform="translate(8.167 8.167)" r="7" cy="7" cx="7" id="sun-inner">
+                      </circle>
+                    </g>
+
+
+                    <g data-name="moon" id="moon">
+                      <g filter="url(#moon)" transform="matrix(1, 0, 0, 1, -31.5, -5.83)">
+                        <circle fill="#cce6ee" transform="translate(31.5 5.83)" r="15.167" cy="15.167" cx="15.167"
+                          data-name="moon" id="moon-3"></circle>
+                      </g>
+                      <g fill="#a6cad0" transform="translate(-24.415 -1.009)" id="patches">
+                        <circle transform="translate(43.009 4.496)" r="2" cy="2" cx="2"></circle>
+                        <circle transform="translate(39.366 17.952)" r="2" cy="2" cx="2" data-name="patch"></circle>
+                        <circle transform="translate(33.016 8.044)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                        <circle transform="translate(51.081 18.888)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                        <circle transform="translate(33.016 22.503)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                        <circle transform="translate(50.081 10.53)" r="1.5" cy="1.5" cx="1.5" data-name="patch">
+                        </circle>
+                      </g>
+                    </g>
+                  </g>
+
+
+                  <g filter="url(#cloud)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+                    <path fill="#fff" transform="translate(-3466.47 -160.94)"
+                      d="M3512.81,173.815a4.463,4.463,0,0,1,2.243.62.95.95,0,0,1,.72-1.281,4.852,4.852,0,0,1,2.623.519c.034.02-.5-1.968.281-2.716a2.117,2.117,0,0,1,2.829-.274,1.821,1.821,0,0,1,.854,1.858c.063.037,2.594-.049,3.285,1.273s-.865,2.544-.807,2.626a12.192,12.192,0,0,1,2.278.892c.553.448,1.106,1.992-1.62,2.927a7.742,7.742,0,0,1-3.762-.3c-1.28-.49-1.181-2.65-1.137-2.624s-1.417,2.2-2.623,2.2a4.172,4.172,0,0,1-2.394-1.206,3.825,3.825,0,0,1-2.771.774c-3.429-.46-2.333-3.267-2.2-3.55A3.721,3.721,0,0,1,3512.81,173.815Z"
+                      data-name="cloud" id="cloud"></path>
+                  </g>
+
+
+                  <g fill="#def8ff" transform="translate(3.585 1.325)" id="stars">
+                    <path transform="matrix(-1, 0.017, -0.017, -1, 24.231, 3.055)"
+                      d="M.774,0,.566.559,0,.539.458.933.25,1.492l.485-.361.458.394L1.024.953,1.509.592.943.572Z">
+                    </path>
+                    <path transform="matrix(-0.777, 0.629, -0.629, -0.777, 23.185, 12.358)"
+                      d="M1.341.529.836.472.736,0,.505.46,0,.4.4.729l-.231.46L.605.932l.4.326L.9.786Z" data-name="star">
+                    </path>
+                    <path transform="matrix(0.438, 0.899, -0.899, 0.438, 23.177, 29.735)"
+                      d="M.015,1.065.475.9l.285.365L.766.772l.46-.164L.745.494.751,0,.481.407,0,.293.285.658Z"
+                      data-name="star"></path>
+                    <path transform="translate(12.677 0.388) rotate(104)"
+                      d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z"
+                      data-name="star"></path>
+                    <path transform="matrix(-0.07, 0.998, -0.998, -0.07, 11.066, 15.457)"
+                      d="M.873,1.648l.114-.62L1.579.945,1.03.62,1.144,0,.706.464.157.139.438.7,0,1.167l.592-.083Z"
+                      data-name="star"></path>
+                    <path transform="translate(8.326 28.061) rotate(11)"
+                      d="M.593,0,.638.724,0,.982l.7.211.045.724.36-.64.7.211L1.342.935,1.7.294,1.063.552Z"
+                      data-name="star"></path>
+                    <path transform="translate(5.012 5.962) rotate(172)"
+                      d="M.816,0,.5.455,0,.311.323.767l-.312.455.516-.215.323.456L.827.911,1.343.7.839.552Z"
+                      data-name="star"></path>
+                    <path transform="translate(2.218 14.616) rotate(169)"
+                      d="M1.261,0,.774.571.114.3.487.967,0,1.538.728,1.32l.372.662.047-.749.728-.218L1.215.749Z"
+                      data-name="star"></path>
+                  </g>
+                </g>
+              </svg>
+            </label>
+          </div>
+          <!-- butao do tema fim-->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Fim-->
+  <!-- Modal inicio -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Itens Modal inicio -->
+          <div class="itensDownload dropdown-item bg-body-secondary ">
+            <a href="#"  download="Documentação" class="d-flex justify-content-between align-items-center text-decoration-none">
+              Documentação
+              <img src="componentes/img/all/assets/download-loop.svg" alt="">
+            </a>
+          </div>
+          <div class="itensDownload dropdown-item bg-body-secondary">
+            <a href="componentes/docDownload/canvas/CanvasStarkTeam-v1.pdf" download="Canvas-Stark-Team" class="d-flex justify-content-between align-items-center text-decoration-none">
+              Canvas
+              <img src="componentes/img/all/assets/download-loop.svg" alt="">
+            </a>
+          </div>
+          <div class="itensDownload dropdown-item bg-body-secondary">
+            <a href="componentes/docDownload/mockUp/teamStark-mokap.bmpr" download="MockUp" class="d-flex justify-content-between align-items-center text-decoration-none">
+              MockUp
+              <img src="componentes/img/all/assets/download-loop.svg" alt="">
+            </a>
+          </div>
+          <div class="itensDownload dropdown-item bg-body-secondary">
+            <a href="componentes/docDownload/prototipo/prototipoStarkPark-mokap.pdf" download="Protótipo" class="d-flex justify-content-between align-items-center text-decoration-none">
+              Protótipo
+              <img src="componentes/img/all/assets/download-loop.svg" alt="">
+            </a>
+          </div>
+          <div class="itensDownload dropdown-item bg-body-secondary">
+            <a href="#" download="Pitch" class="d-flex justify-content-between align-items-center text-decoration-none">
+              Pitch
+              <img src="componentes/img/all/assets/download-loop.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- Itens Modal fim -->
+        <!-- butao close Modal inicio -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <!-- butao close Modal fim -->
+      </div>
+    </div>
+  </div>
+  <!-- Modal Fim -->
+  <main class="flex-grow-1 flex-shrink-1 w-100">
+    <div class="container-fluid col m-0 p-5 ">
+      <div class="container-fluid row m-0 p-0">
+        <div class="canvasPartUm d-flex container-fluid flex-wrap">
+          <section class="parceirosChaves mt-3">
+            <h3 class="border-danger">Parceiros Chaves</h3>
+            <div class="conteinerPaceitosCaves bg-danger">
+              <p>Provedor de internet;</p>
+            </div>
+            <div class="conteinerPaceitosCaves bg-danger">
+              <p>Provedor Cloud;</p>
+            </div>
+            <div class="conteinerPaceitosCaves bg-danger">
+              <p>Fornedores de sensores de presença e microcontoladores;</p>
+            </div>
+            <div class="conteinerPaceitosCaves bg-danger">
+              <p>Empresas de desenvolvimento de software e aplicativos*.</p>
+            </div>
+          </section>
+          <section class="atividadesChaves mt-3">
+            <h3 class="border-warning-subtle">Atividades Chaves</h3>
+            <div class="conteinerAtividadesChaves bg-warning-subtle">
+              <p>Desenvolvimento do software de gerenciamento de vagas e do aplicativo para smartphone;</p>
+            </div>
+            <div class="conteinerAtividadesChaves bg-warning-subtle">
+              <p>Manutenção e atualização do sistema;</p>
+            </div>
+            <div class="conteinerAtividadesChaves bg-warning-subtle">
+              <p>Monitoramento e análise de dados.</p>
+            </div>
+          </section>
+          <section class="propostadeValor mt-3">
+            <h3 class="border-success-subtle">Proposta de Valor</h3>
+            <div class="conteinerPropostadeValor bg-success-subtle">
+              <p>Otimização do tráfego de estacionamento atraves de sensores de presença e do software de Monitoramento;
+              </p>
+            </div>
+            <div class="conteinerPropostadeValor bg-success-subtle">
+              <p>Possibilitar aos visitantes encontrar as vagas disponíveis no estacionamento de maneira pratica e ágil.
+              </p>
+            </div>
+          </section>
+          <section class="recursosChaves mt-3">
+            <h3 class="border-info">Recursos Chaves</h3>
+            <div class="conteinerRecursosChaves bg-info">
+              <p>Internet;</p>
+            </div>
+            <div class="conteinerRecursosChaves bg-info">
+              <p>Dispositivo com acesso a internet;</p>
+            </div>
+            <div class="conteinerRecursosChaves bg-info">
+              <p>Sensores de presença instalados nas vagas de estacionamento.</p>
+            </div>
+          </section>
+          <section class="relacionamentoCliente mt-3">
+            <h3 class="border-info-subtle">Relacionamento com o Cliente</h3>
+            <div class="conteinerRelacionamentoCliente bg-info-subtle">
+              <p>Interação junto ao cliente através de um suporte humanizado e disposto a atender as necessidades do mesmo
+                de acordo com suas dúvidas;</p>
+            </div>
+            <div class="conteinerRelacionamentoCliente bg-info-subtle">
+              <p>Fornecimento de uma solução tecnológica, que melhora a experiência do cliente e visitantes, economizando
+                os custos com mão de obra extra;</p>
+            </div>
+            <div class="conteinerRelacionamentoCliente bg-info-subtle">
+              <p>Fornecimento de treinamento e/ou capacitação aos colaboradores do estacionamento, oferecendo aos clientes
+                um atendimento personalizado e eficiente.</p>
+            </div>
+          </section>
+          <section class="Canais mt-3">
+            <h3 class="border-primary">Canais</h3>
+            <div class="conteinerCanais bg-primary">
+              <p>Divulgação através de Tráfego pago;</p>
+            </div>
+            <div class="conteinerCanais bg-primary">
+              <p>Divulgação junto aos parceiros-chave;</p>
+            </div>
+            <div class="conteinerCanais bg-primary">
+              <p>Divulgação com propaganda em cartazes, banners, comerciais de tv e rádio.</p>
+            </div>
+          </section>
+          <section class="segmentoMercado mt-3">
+            <h3 class="border-warning">Segmento de Mercado</h3>
+            <div class="conteinerSegmentoMercado bg-warning">
+              <p>Shoppings e Centros Comerciais;</p>
+            </div>
+            <div class="conteinerSegmentoMercado bg-warning">
+              <p>Hospitais e Clínicas;</p>
+            </div>
+            <div class="conteinerSegmentoMercado bg-warning">
+              <p>Aeroportos e Rodoviárias.</p>
+            </div>
+          </section>
+        </div>
+        <div class="canvasPartDois d-flex container-fluid flex-wrap">
+          <section class="estruturaCustos mt-3">
+            <h3 class="border-success">Estrutura de Custos</h3>
+            <div class="conteinerEstruturaCustos bg-success">
+              <p>Custos de instalação e manutenção dos sensores e sistema central: R$2.000,00;</p>
+            </div>
+            <div class="conteinerEstruturaCustos bg-success">
+              <p>Equipe de desenvolvimento e Suporte Técnico: R$32.000,00</p>
+            </div>
+            <div class="conteinerEstruturaCustos bg-success">
+              <p>Custos de manutenção e atualização do sistema:R$10.500,00.</p>
+            </div>
+          </section>
+          <section class="fontesRenda mt-3">
+            <h3 class="border-secondary">Fontes de Renda</h3>
+            <div class="conteinerFontesRenda bg-secondary">
+              <p>Venda e aluguel de licenças do software de gerenciamento de vagas;</p>
+            </div>
+            <div class="conteinerFontesRenda bg-secondary">
+              <p>Prestação de Serviço de Manutenção e Atualização do sistema.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-body-tertiary py-3"
+    data-bs-toggle="light">
+    <div class="col-md-2 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-body-secondary ps-2">© 2023 Stark Team</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="me-3"><a class="text-body-secondary" href="sobre.html">Quem somos</a></li>
+      <li class="me-3"><a class="text-body-secondary" href="equipe.html">Equipe</a></li>
+      <li class="me-3"><a class="text-body-secondary" href="contato.html">Contato</a></li>
+    </ul>
+  </footer>
+  <!--botao para ir pro topo -->
+  <button class="btn btn-outline-secondary" id="btn-top" onclick="scrollToTop()"><img
+      src="componentes/img/all/assets/arrow-up-bold.svg" alt="border-danger"></button>
+  <!--botao para ir pro topo fim-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="js/themeSwitch.js"></script>
+  <script src="js/btn-top.js"></script>
+</body>
+
+</html>

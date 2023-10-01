@@ -1,0 +1,18 @@
+
+/*//////////////////////////////*/
+
+
+.form-control:invalid {
+  border-color: red;
+}
+.form-control:valid {
+  border-color: green;
+}
+.formBox{
+  min-width: 70vw !important;
+  width: 30vw !important;
+  border-radius: 7px;
+}
+main .d-flex{
+  justify-content: center;
+}

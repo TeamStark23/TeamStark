@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: auto;
+}
+
+.form-check {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin: 0 15px 0 15px;
+}
+
+.itensDownload {
+  border-radius: 17px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.itensDownload a{
+  height: 50px;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: inherit;
+}
+#btn-top {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  display: none;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  opacity: 0.78;
+}
+
+#btn-top:hover {
+  background-color: #302f2f;
+}
+
+body{
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+main{
+  background: url(../componentes/img/backgroundLight.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: justify;
+}
+
+[data-bs-theme="dark"] main{
+  background: url(../componentes/img/backgroundDark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+[data-bs-theme="light"] footer {
+  opacity: 1;
+  background: rgb(230, 230, 230);
+  color: #000;
+}
+
+[data-bs-theme="dark"] footer {
+  background: rgb(43, 48, 53);
+  color: #fff;
+}
+
+.text-decoration-none {
+  color: #000;
+}
+
+[data-bs-theme="light"].text-decoration-none {
+  color: #000;
+}
+
+[data-bs-theme="dark"] .text-decoration-none {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+[data-bs-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #171717;
+}
+
+[data-bs-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #171717;
+}
+.dropdown-item:active{
+  background-color: rgba(0, 0, 0, 0.76)!important;
+  color: rgb(235, 235, 235)!important;
+}
+[data-bs-theme="dark"] .dropdown-item:active{
+  color: #000000!important;
+  background-color: rgba(238, 238, 238, 0.76)!important;
+  
+}
+
+
+@media only screen and (max-width: 992px) {
+  #btnTema {
+    margin: 15px 0;
+  }
+}
+
+
+[data-bs-theme="dark"] footer {
+  background: rgb(43, 48, 53);
+  color: #fff;
+}
+
+.blur-text {
+  color: #000000;
+  text-shadow: 0px 0px 10px #FFFFFF;
+}
+
+[data-bs-theme="dark"] .blur-text{
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #000000;
+  
+}
+
+footer{
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/*//////////////////////////////*/
+
+#theme-toggle-button {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.6em;
+  cursor: pointer;
+}
+
+#btnSwitch {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+  
+}
+
+#btnSwitch:checked + svg #container {
+  fill: #2b4360;
+}
+
+#btnSwitch:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+#sun {
+  opacity: 1;
+}
+
+#btnSwitch:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#btnSwitch:checked + svg #moon {
+  opacity: 1;
+}
+
+#cloud {
+  opacity: 1;
+}
+
+#btnSwitch:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#btnSwitch:checked + svg #stars {
+  opacity: 1;
+}

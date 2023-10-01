@@ -1,0 +1,58 @@
+
+/*//////////////////////////////*/
+
+.cardBox{
+  display: flex;
+  min-width: 250px;
+  height: 350px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: .6s;
+}
+.cardBox img{
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    border: none;
+    
+}
+.cardForm{
+  min-width: 250px;
+}
+.cardForm :hover{
+  border: 3px solid #000000; 
+}
+
+[data-bs-theme="dark"] .cardForm :hover{
+  border: 3px solid #fff; 
+}
+.blur-text {
+  color: #000000;
+  text-shadow: 0px 0px 10px #FFFFFF;
+  filter: drop-shadow(0 0mm 1mm rgba(255, 255, 255, 0.281));
+}
+
+[data-bs-theme="dark"] .blur-text{
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #000000;
+  filter: drop-shadow(0 -1mm 1mm rgb(0, 0, 0));
+  
+}
+
+.nossaMissao{
+  flex-direction: row;
+  gap: 8px;
+}
+.nossaMissao img{
+  width: auto;
+  height: 65vh;
+}
+.nossaHistoria img{
+  width: auto;
+  height: 65vh;
+}
