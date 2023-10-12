@@ -1,6 +1,17 @@
 
 /*//////////////////////////////*/
+main {
+  background: url(../componentes/img/patter-bg-light2.jpg) !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  text-align: justify;
+}
 
+[data-bs-theme="dark"] main {
+  background: url(../componentes/img/patter-bg-dark3.png) !important;
+  background-repeat: repeat !important;
+ 
+}
 .cardBox{
   display: flex;
   min-width: 250px;
@@ -30,18 +41,6 @@
 
 [data-bs-theme="dark"] .cardForm :hover{
   border: 3px solid #fff; 
-}
-.blur-text {
-  color: #000000;
-  text-shadow: 0px 0px 10px #FFFFFF;
-  filter: drop-shadow(0 0mm 1mm rgba(255, 255, 255, 0.281));
-}
-
-[data-bs-theme="dark"] .blur-text{
-  color: #ffffff;
-  text-shadow: 0px 0px 6px #000000;
-  filter: drop-shadow(0 -1mm 1mm rgb(0, 0, 0));
-  
 }
 
 .nossaMissao{

@@ -1,6 +1,16 @@
 
 /*//////////////////////////////*/
+.title{
+  border-radius: 7px;
+  background-color: #ffffffe5;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+}
 
+[data-bs-theme="dark"] .title{
+  background-color: rgb(43, 48, 53);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
 .cardBox{
   display: flex;
   border-collapse:separate;
@@ -12,6 +22,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   
 }
 .cardBox img{
@@ -28,19 +39,6 @@
   min-width: 280px;
 }
 
-.cardForm :hover{
-  transition: 0.2s ease;
-  border: 1px solid #3d3d3d;
-  box-shadow: 0px 0px 6px 2px #3d3d3d;
-
-}
-
-[data-bs-theme="dark"] .cardForm :hover{
-  transition: 0.2s ease;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 0px 15px 5px #ffffff;
-  
-}
 .nomeDev{
   border: none !important; 
   filter: drop-shadow(0 0mm 0mm rgba(0, 0, 0, 0))!important;
@@ -54,17 +52,4 @@
   background-color: transparent!important;
   border: none!important;
   box-shadow: none!important;
-}
-
-.blur-text {
-  color: #000000;
-  text-shadow: 0px 0px 10px #FFFFFF;
-  filter: drop-shadow(0 0mm 1mm rgba(255, 255, 255, 0.712));
-}
-
-[data-bs-theme="dark"] .blur-text{
-  color: #ffffff;
-  text-shadow: 0px 0px 6px #000000;
-  filter: drop-shadow(0 0mm 1mm rgb(0, 0, 0));
-  
 }
