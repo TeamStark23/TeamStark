@@ -63,20 +63,17 @@ body{
   min-height: 100%;
 }
 
-main{
-  transition: background-color 0.3s ease;
-  background: url(../componentes/img/backgroundLight.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
+main {
+  background: url(../componentes/img/patter-bg-light2.jpg) !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  text-align: justify;
 }
 
-[data-bs-theme="dark"] main{
-  background: url(../componentes/img/backgroundDark.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+[data-bs-theme="dark"] main {
+  background: url(../componentes/img/patter-bg-dark3.png) !important;
+  background-repeat: repeat !important;
+
 }
 
 [data-bs-theme="light"] footer {
