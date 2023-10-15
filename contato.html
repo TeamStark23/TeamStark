@@ -19,8 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-toggle="light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img id="logoNav" src="componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto"
-            height="50">
+          <img id="logoNav" src="componentes/img/all/logo/logo-stark-preta-v1.2.png" alt="" width="auto" height="50">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,20 +30,21 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sobre
-            </a>
-            <ul class="dropdown-menu">
-              <li class="">
-                <a class="dropdown-item" href="sobre.html">Sobre</a>
-              </li>
-              <li class="">
-                <a class="dropdown-item" href="equipe.html">Equipe</a>
-              </li>
-              <li class=""><a class="dropdown-item" href="contato.html">Contato</a></li>
-            </ul>
-            <!-- dropdown menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sobre
+              </a>
+              <ul class="dropdown-menu">
+                <li class="">
+                  <a class="dropdown-item" href="sobre.html">Sobre</a>
+                </li>
+                <li class="">
+                  <a class="dropdown-item" href="equipe.html">Equipe</a>
+                </li>
+                <li class=""><a class="dropdown-item" href="contato.html">Contato</a></li>
+              </ul>
+              <!-- dropdown menu-->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -53,7 +53,8 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="canvas.html">Canvas</a></li>
                 <li><a class="dropdown-item" href="picth.html">Pitch</a></li>
-                <li><a class="dropdown-item" href="https://teamstark23.github.io/TeamStarkProject/homePage.html">Protótipo</a></li>
+                <li><a class="dropdown-item"
+                    href="https://teamstark23.github.io/TeamStarkProject/homePage.html">Protótipo</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -72,7 +73,7 @@
           <!-- butao do tema-->
           <div class="tema">
             <label class="toggle" for="btnSwitch">
-              <input id="btnSwitch" class="input" type="checkbox">           
+              <input id="btnSwitch" class="input" type="checkbox">
               <div class="icon icon--moon">
                 <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -106,25 +107,29 @@
         <div class="modal-body">
           <!-- Itens Modal inicio -->
           <div class="itensDownload dropdown-item bg-body-secondary ">
-            <a href="componentes/docDownload/documentacao/Documentação.pdf"  download="Documentação" class="d-flex justify-content-between align-items-center text-decoration-none">
+            <a href="componentes/docDownload/documentacao/Documentação.pdf" download="Documentação.pdf"
+              class="d-flex justify-content-between align-items-center text-decoration-none">
               Documentação
               <img src="componentes/img/all/assets/download-loop.svg" alt="">
             </a>
           </div>
           <div class="itensDownload dropdown-item bg-body-secondary">
-            <a href="componentes/docDownload/canvas/CanvasStarkTeam-v1.pdf" download="Canvas-Stark-Team" class="d-flex justify-content-between align-items-center text-decoration-none">
+            <a href="componentes/docDownload/canvas/CanvasStarkTeam-v1.pdf" download="Canvas-Stark-Team.pdf"
+              class="d-flex justify-content-between align-items-center text-decoration-none">
               Canvas
               <img src="componentes/img/all/assets/download-loop.svg" alt="">
             </a>
           </div>
           <div class="itensDownload dropdown-item bg-body-secondary">
-            <a href="componentes/docDownload/prototipo/prototipoStarkPark-mokap.pdf" download="Protótipo" class="d-flex justify-content-between align-items-center text-decoration-none">
+            <a href="componentes/docDownload/prototipo/prototipoStarkPark-mokap.pdf" download="Protótipo.pdf"
+              class="d-flex justify-content-between align-items-center text-decoration-none">
               MockUp
               <img src="componentes/img/all/assets/download-loop.svg" alt="">
             </a>
           </div>
           <div class="itensDownload dropdown-item bg-body-secondary">
-            <a href="componentes/docDownload/pitch/pitch.rar" download="Pitch" class="d-flex justify-content-between align-items-center text-decoration-none">
+            <a href="componentes/docDownload/pitch/pitch.rar" download="Pitch.rar"
+              class="d-flex justify-content-between align-items-center text-decoration-none">
               Pitch
               <img src="componentes/img/all/assets/download-loop.svg" alt="">
             </a>
@@ -146,56 +151,59 @@
         <div class="contForm container-fluid  d-flex justify-content-center">
           <div class="formBox d-block bg-body-tertiary mt-5 mb-5 p-3" data-bs-toggle="light">
             <h1>Deixe seu comentario</h1>
-  <form class="row g-2 gy-3 needs-validation" novalidate>
-    <div class="col-md-6">
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
-      <div class="invalid-feedback">
-        Por favor, informe o nome.
-      </div>
-    </div>
-    <div class="col-md-6">
-      <label for="sobrenome" class="form-label">Sobrenome</label>
-      <input type="text" class="form-control" id="sobrenome" placeholder="Seu sobrenome" required>
-      <div class="invalid-feedback">
-        Por favor, informe o sobrenome.
-      </div>
-    </div>
-    <div class="col-12">
-      <label for="email" class="form-label">E-mail</label>
-      <input type="email" class="form-control" id="email" placeholder="seuemail@example.com" required>
-      <div class="invalid-feedback">
-        Por favor, informe um e-mail válido.
-      </div>
-    </div>
-    <div class="col-12">
-      <label for="celular" class="form-label">Número de Celular</label>
-      <input type="tel" class="form-control" id="celular" placeholder="(xx) xxxxx-xxxx" minlength="11" required>
-      <div class="invalid-feedback">
-        Por favor, informe um número de celular válido.
-      </div>
-    </div>
-    <div class="col-12">
-      <label for="titulo" class="form-label">Título</label>
-      <input type="text" class="form-control" id="titulo" placeholder="Título do seu comentário" minlength="5" required>
-      <div class="invalid-feedback">
-        Por favor, informe o título.
-      </div>
-    </div>
-    <div class="col-12">
-      <label for="texto" class="form-label">Texto</label>
-      <textarea class="form-control" id="texto" rows="4" placeholder="Sua mensagem" required minlength="3"></textarea>
-    </div>
-    <div class="col-12 d-grid">
-      <button class="btn btn-secondary mt-2 mb-4" type="button" onclick="validarFormulario()">Enviar</button>
-    </div>
-  </form>
-  
-  <div id="mensagem-sucesso" style="display: none; margin-top: 10px;">
-    <div class="alert alert-success" role="alert">
-      Seu comentário foi enviado com sucesso! Agradecemos o seu feedback.
-    </div>
-  </div>
+            <form class="row g-2 gy-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required>
+                <div class="invalid-feedback">
+                  Por favor, informe o nome.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="sobrenome" placeholder="Seu sobrenome" required>
+                <div class="invalid-feedback">
+                  Por favor, informe o sobrenome.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="seuemail@example.com" required>
+                <div class="invalid-feedback">
+                  Por favor, informe um e-mail válido.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="celular" class="form-label">Número de Celular</label>
+                <input type="tel" class="form-control" id="celular" placeholder="(xx) xxxxx-xxxx" minlength="11"
+                  required>
+                <div class="invalid-feedback">
+                  Por favor, informe um número de celular válido.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="titulo" placeholder="Título do seu comentário" minlength="5"
+                  required>
+                <div class="invalid-feedback">
+                  Por favor, informe o título.
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="texto" class="form-label">Texto</label>
+                <textarea class="form-control" id="texto" rows="4" placeholder="Sua mensagem" required
+                  minlength="3"></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button class="btn btn-secondary mt-2 mb-4" type="button" onclick="validarFormulario()">Enviar</button>
+              </div>
+            </form>
+
+            <div id="mensagem-sucesso" style="display: none; margin-top: 10px;">
+              <div class="alert alert-success" role="alert">
+                Seu comentário foi enviado com sucesso! Agradecemos o seu feedback.
+              </div>
+            </div>
           </div>
         </div>
       </div>
