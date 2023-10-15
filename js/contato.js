@@ -1,13 +1,15 @@
-   // Seleciona o formulário
-   const form = document.querySelector('.needs-validation');
+function validarFormulario() {
+  const nome = document.getElementById('nome').value;
+  const sobrenome = document.getElementById('sobrenome').value;
+  const email = document.getElementById('email').value;
+  const celular = document.getElementById('celular').value;
+  const titulo = document.getElementById('titulo').value;
+  const texto = document.getElementById('texto').value;
 
-   // Adiciona um listener para o evento de submit
-   form.addEventListener('submit', function(event) {
-     // Verifica se o formulário é válido
-     if (!form.checkValidity()) {
-       event.preventDefault(); // Impede o envio do formulário
-       event.stopPropagation(); // Evita a propagação do evento
-     }
-
-     form.classList.add('was-validated'); // Adiciona a classe para exibir o feedback de validação
-   }, false);
+  if (nome && sobrenome && email && celular && titulo && texto) {
+    document.getElementById('mensagem-sucesso').style.display = 'block';
+  } else {
+    document.getElementById('mensagem-sucesso').style.display = 'none';
+    alert('Por favor, preencha todos os campos obrigatórios.');
+  }
+}

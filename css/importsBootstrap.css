@@ -159,12 +159,6 @@ main{
 }
 
 
-@media only screen and (max-width: 992px) {
-  #btnTema {
-    margin: 15px 0;
-  }
-}
-
 
 [data-bs-theme="dark"] footer {
   background: rgb(43, 48, 53);
@@ -190,69 +184,41 @@ footer{
 }
 /*//////////////////////////////*/
 
-#theme-toggle-button {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 3.6em;
+.toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
   cursor: pointer;
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
+  line-height: 1;
 }
 
-#btnSwitch {
+
+.input {
   display: none;
-  width: 0;
-  height: 0;
 }
 
-#container,
-#patches,
-#stars,
-#button,
-#sun,
-#moon,
-#cloud {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.25s;
-  
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  transition: transform 500ms;
 }
 
-#btnSwitch:checked + svg #container {
-  fill: #2b4360;
+.icon--moon {
+  transition-delay: 200ms;
 }
 
-#btnSwitch:checked + svg #button {
-  transform: translate(28px, 2.333px);
+.icon--sun {
+  transform: scale(0);
 }
 
-#sun {
-  opacity: 1;
+#btnSwitch:checked+.icon--moon {
+  transform: rotate(360deg) scale(0);
 }
 
-#btnSwitch:checked + svg #sun {
-  opacity: 0;
-}
-
-#moon {
-  opacity: 0;
-}
-
-#btnSwitch:checked + svg #moon {
-  opacity: 1;
-}
-
-#cloud {
-  opacity: 1;
-}
-
-#btnSwitch:checked + svg #cloud {
-  opacity: 0;
-}
-
-#stars {
-  opacity: 0;
-}
-
-#btnSwitch:checked + svg #stars {
-  opacity: 1;
+#btnSwitch:checked~.icon--sun {
+  transition-delay: 200ms;
+  transform: scale(1) rotate(360deg);
 }
