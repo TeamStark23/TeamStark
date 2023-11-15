@@ -9,10 +9,10 @@ function loadThemePreference() {
     document.documentElement.setAttribute('data-bs-theme', savedTheme);
     if (savedTheme === 'dark') {
       btnSwitch.checked = true;
-      logoNav.src = 'componentes/img/all/logo/logo-stark-branco-v1.2.png';
+      logoNav.src = 'componentes/img/all/logo/logo-stark-branco-v1.2.svg';
     } else {
       btnSwitch.checked = false;
-      logoNav.src = 'componentes/img/all/logo/logo-stark-preta-v1.2.png';
+      logoNav.src = 'componentes/img/all/logo/logo-stark-preta-v1.2.svg';
     }
   }
 }
@@ -28,9 +28,9 @@ document.getElementById('btnSwitch').addEventListener('click', () => {
 
 btnSwitch.addEventListener('change', function() {
   if (this.checked) {
-    logoNav.src = 'componentes/img/all/logo/logo-stark-branco-v1.2.png';
+    logoNav.src = 'componentes/img/all/logo/logo-stark-branco-v1.2.svg';
   } else {
-    logoNav.src = 'componentes/img/all/logo/logo-stark-preta-v1.2.png';
+    logoNav.src = 'componentes/img/all/logo/logo-stark-preta-v1.2.svg';
   }
 });
 

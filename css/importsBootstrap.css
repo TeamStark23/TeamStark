@@ -95,9 +95,11 @@ main {
 
 [data-bs-theme="dark"] main {
   background: url(../componentes/img/backgroundDark.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  text-align: justify;
+  background-size: auto;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 [data-bs-theme="light"] footer {
