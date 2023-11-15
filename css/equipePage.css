@@ -1,6 +1,6 @@
 .title {
   border-radius: 7px;
-  background-color: rgb(248,249,250);
+  background-color: rgb(248, 249, 250);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
@@ -9,11 +9,12 @@
   background-color: rgb(43, 48, 53);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
 /*//////////////////////////////*/
 
-.cardBox{
+.cardBox {
   display: flex;
-  border-collapse:separate;
+  border-collapse: separate;
   min-width: 250px;
   height: 350px;
   border-radius: 7px;
@@ -21,35 +22,40 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  
-}
-.cardBox img{
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    display: flex;
-    border: none;
 
-    
 }
-.cardForm{
+
+.cardBox img {
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+  border: none;
+  object-position: center;
+
+}
+
+.cardForm {
   flex: 1 1 350px;
   min-width: 280px;
 }
 
-.nomeDev{
-  border: none !important; 
-  filter: drop-shadow(0 0mm 0mm rgba(0, 0, 0, 0))!important;
-  background-color: transparent!important;
-  border: none!important;
-  box-shadow: none!important;
+.nomeDev {
+  border: none !important;
+  filter: drop-shadow(0 0mm 0mm rgba(0, 0, 0, 0)) !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
-.profissao{
-  border: none !important; 
-  filter: drop-shadow(0 0mm 0mm rgba(0, 0, 0, 0))!important;
-  background-color: transparent!important;
-  border: none!important;
-  box-shadow: none!important;
+
+.profissao {
+  border: none !important;
+  filter: drop-shadow(0 0mm 0mm rgba(0, 0, 0, 0)) !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-Cards {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }

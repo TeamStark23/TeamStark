@@ -1,14 +1,14 @@
 
 /*//////////////////////////////*/
 main {
-  background: url(../componentes/img/patter-bg-light2.jpg) !important;
+  background: url(../componentes/img/patter-bg-light2.svg) !important;
   background-repeat: repeat !important;
   background-size: auto !important;
   text-align: justify;
 }
 
 [data-bs-theme="dark"] main {
-  background: url(../componentes/img/patter-bg-dark3.png) !important;
+  background: url(../componentes/img/DarkBg-patter.svg) !important;
   background-repeat: repeat !important;
  
 }
@@ -48,14 +48,15 @@ main {
   padding: 0px;
 }
 .nossaMissao img{
-  width: auto;
-  height: 65vh;
-  background-position: center;
-  background-size: contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+ 
 }
 .nossaHistoria img{
-  width: auto;
-  height: 65vh;
-  background-position: center !important  ;
-  background-size: contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
 }
+

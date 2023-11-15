@@ -6,27 +6,31 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
   -webkit-user-select: none;
-  -moz-user-select: none; 
-  -ms-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  }
+}
 
 header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   height: auto;
-  
+
 }
 
 .form-check {
@@ -42,14 +46,17 @@ header {
   justify-content: space-between !important;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.itensDownload a{
+
+.itensDownload a {
   height: 50px;
   padding: 15px;
   border-radius: 7px;
 }
-.itensDownload img{
+
+.itensDownload img {
   opacity: 0.5;
 }
+
 #btn-top {
   position: fixed;
   bottom: 85px;
@@ -69,7 +76,7 @@ header {
   background-color: #302f2f;
 }
 
-body{
+body {
   position: absolute;
   left: 0;
   top: 0;
@@ -77,7 +84,7 @@ body{
   min-height: 100%;
 }
 
-main{
+main {
   background-color: #F0F0F0;
   background: url(../componentes/img/backgroundLight.jpg);
   background-size: cover;
@@ -86,7 +93,7 @@ main{
   text-align: justify;
 }
 
-[data-bs-theme="dark"] main{
+[data-bs-theme="dark"] main {
   background: url(../componentes/img/backgroundDark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,14 +155,16 @@ main{
 [data-bs-theme="dark"] ::-webkit-scrollbar-thumb:hover {
   background: #171717;
 }
-.dropdown-item:active{
-  background-color: rgba(0, 0, 0, 0.76)!important;
-  color: rgb(235, 235, 235)!important;
+
+.dropdown-item:active {
+  background-color: rgba(0, 0, 0, 0.76) !important;
+  color: rgb(235, 235, 235) !important;
 }
-[data-bs-theme="dark"] .dropdown-item:active{
-  color: #000000!important;
-  background-color: rgba(238, 238, 238, 0.76)!important;
-  
+
+[data-bs-theme="dark"] .dropdown-item:active {
+  color: #000000 !important;
+  background-color: rgba(238, 238, 238, 0.76) !important;
+
 }
 
 [data-bs-theme="dark"] footer {
@@ -164,12 +173,13 @@ main{
 }
 
 
-footer{
+footer {
 
   bottom: 0;
   left: 0;
   width: 100%;
 }
+
 /*//////////////////////////////*/
 
 .toggle {
@@ -210,8 +220,29 @@ footer{
   transition-delay: 200ms;
   transform: scale(1) rotate(360deg);
 }
+
+p {
+  font-size: 21px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
 @media only screen and (max-width: 600px) {
-  * {
-    font-size: 78%;
+  p {
+    font-size: 16px;
   }
-} 
+
+  h2 {
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+}

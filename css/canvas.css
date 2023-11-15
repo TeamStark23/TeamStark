@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+main {
+  background: url(../componentes/img/patter-bg-light2.svg) !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  text-align: justify;
+}
+
+[data-bs-theme="dark"] main {
+  background: url(../componentes/img/DarkBg-patter.svg) !important;
+  background-repeat: repeat !important;
+
+}
 /*//////////////////////////////*/
 .canvas {
     display: flex;
