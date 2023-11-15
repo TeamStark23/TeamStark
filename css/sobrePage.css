@@ -45,13 +45,17 @@ main {
 
 .nossaMissao{
   flex-direction: row;
-  gap: 8px;
+  padding: 0px;
 }
 .nossaMissao img{
   width: auto;
   height: 65vh;
+  background-position: center;
+  background-size: contain;
 }
 .nossaHistoria img{
   width: auto;
   height: 65vh;
+  background-position: center !important  ;
+  background-size: contain;
 }
