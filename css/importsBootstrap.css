@@ -86,7 +86,7 @@ body {
 
 main {
   background-color: #F0F0F0;
-  background: url(../componentes/img/backgroundLight.svg);
+  background: url(../componentes/img/backgroundLight.jpg);
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -94,7 +94,7 @@ main {
 }
 
 [data-bs-theme="dark"] main {
-  background: url(../componentes/img/backgroundDark.svg);
+  background: url(../componentes/img/backgroundDark.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -221,15 +221,17 @@ footer {
 }
 
 p {
-  font-size: 21px;
+  font-size: 22px;
 }
 
 h2 {
   font-size: 25px;
+  font-weight: 500;
 }
 
 h1 {
   font-size: 28px;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {
