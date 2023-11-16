@@ -86,7 +86,7 @@ body {
 
 main {
   background-color: #F0F0F0;
-  background: url(../componentes/img/backgroundLight.jpg);
+  background: url(../componentes/img/backgroundLight.svg);
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -94,12 +94,9 @@ main {
 }
 
 [data-bs-theme="dark"] main {
-  background: url(../componentes/img/backgroundDark.jpg);
-  object-fit: cover;
-  text-align: justify;
-  background-size: auto;
+  background: url(../componentes/img/backgroundDark.svg);
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 [data-bs-theme="light"] footer {
